@@ -1,0 +1,29 @@
+version: "3"
+services:
+  reto1:
+    image: reto1
+    ports:
+      - "8081:8081"
+    depends_on:
+      - eurekaserver
+ 
+  reto2:
+    image: reto2
+    ports:
+      - "8080:8080"
+    depends_on:
+      - eurekaserver
+
+  zuulserver:
+    image: zuulserver
+    ports:
+      - "8083:8083"
+    depends_on:
+      - eurekaserver 
+
+  eurekaserver:
+    image: eurekaserver
+    ports:
+      - "8761:8761"
+       
+     

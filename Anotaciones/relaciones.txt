@@ -1,0 +1,1 @@
+https://danielme.com/2018/01/03/hibernatejpa-relaciones-y-atributos-lazy-bytecode-enhacement/

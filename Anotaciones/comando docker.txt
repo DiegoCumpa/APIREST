@@ -1,0 +1,11 @@
+docker build -f Dockerfile -t docker-spring-boot .
+
+docker run -p 8080:8080 docker-spring-boot
+
+docker rmi -f idimagen
+
+docker image ls
+
+docker container ls
+
+docker stop id

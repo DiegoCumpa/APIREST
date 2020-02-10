@@ -1,0 +1,34 @@
+git branch                  		Crear Rama
+git checkout                		cambiar a rama
+git commit -m ""                  	commitear, realizar cambios con un mensaje
+git init                    		crear repositorio
+git add                     		agregar a repositorio
+git add -A                  		agregar todos los archivos
+git config --global user.name ""	Establecer nombre
+git config --global user.name		Consultar nombre
+git config --global user.mail "" 	Establecer correo
+git config --global user.mail		Consultar correo
+git branch -D (nombre de rama)		Eliminar rama
+git checkout -b (nombre de rama)	Crear rama y cambiar a rama creada en el acto
+git status				Ver cambios
+git clone				Descargar un proyecto remotamente de github a la pc local
+git remote add origin (https...)	Establecer conexion entre github y la pc local
+git remote remove origin          	Deshacer conexion entre github y la pc local
+git push origin master			Subir todo el proyecto de manera remota
+git remote -v				Comprobar conexion
+git log 				Lista de commits
+git reset --hard (idcommit)		Regresa al estado de ese commit especificado
+git push -u origin master 		Subir el proyecto creando la rama "master"
+git diff				Comparar cambios hechos
+git checkout . 				Revierte todo al ultimo commit
+git reset (ruta del archivo)		Quita control al archivo que va ser commiteado
+git commit --amend -m ""  		Corregir el texto de mensaje del ultimo commit
+git reflog 				Lista de commits mas intuitiva
+git reset --mixed (idcommit)		Revierte hacia ese commit especificado evitando los commits posteriores pero manteniendo los cambios
+git log --oneline --decorate --all --graph 	Git log mas resumido y mas visual
+git branch -d (nombre de la rama)	elimina rama
+
+
+Fusionar Ramas:
+1.-Situarse en la rama que va absorver con git checkout master
+2.-Usar el comando git merge (nombre de la rama que va ser absorvida)
